@@ -12,3 +12,6 @@ log_level = 'INFO'
 load_from = None
 resume_from = None
 workflow = [('train', 1)]
+custom_hooks = [
+    dict(type='EMAHook', momentum=0.0002, interval=1, warm_up=10000),
+]

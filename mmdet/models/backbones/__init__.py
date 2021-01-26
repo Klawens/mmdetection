@@ -10,9 +10,12 @@ from .resnet import ResNet, ResNetV1d
 from .resnext import ResNeXt
 from .ssd_vgg import SSDVGG
 from .trident_resnet import TridentResNet
+from .efficient_net import EfficientNetBackBone, EfficientNet, load_checkpoint
+from .efficient_net_utils import MBConv, Swish, Flatten
 
 __all__ = [
     'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet', 'Res2Net',
     'HourglassNet', 'DetectoRS_ResNet', 'DetectoRS_ResNeXt', 'Darknet',
-    'ResNeSt', 'TridentResNet'
+    'ResNeSt', 'TridentResNet', 'EfficientNetBackBone', 'EfficientNet',
+    'load_checkpoint', 'MBConv', 'Swish', 'Flatten'
 ]
